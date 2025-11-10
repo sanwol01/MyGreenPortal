@@ -1,4 +1,28 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
 }
+
+
+/*
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+  */
+
+
+body{position: relative;
+    
+}
+
+  header{ width: 100vh;
+          height: 60px;
+          position: sticky;
+          top: 0;
+          background-color: green;
+    
+  }
