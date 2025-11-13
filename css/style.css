@@ -16,8 +16,7 @@
 
 
 body{ 
-
-    background-color: blanchedalmond;
+  background-color: #fffff3;
     
 }
 
@@ -27,43 +26,84 @@ body{
           height: 120px;
           position: fixed;
           top: 0;
-          background-color: green;
+          background-color: #00dbff;
+          display: flex;
+          flex-wrap: nowrap;
+          z-index: 1;
     
   }
 
-  nav{ display: flex;
-    justify-content: right;
+
+
+  .logo{
+    display: flexbox;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    margin: 10px 10px;
+  }
+
+  nav{ 
+    position: absolute;
+    right:15px;
+    bottom: 5px;
     padding: 10px;
   
+  }
+/*
+  .searchcontainer{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 28px;
+    background-color: #fffff3;
+
+  }*/
+
+  .search-input{
+    margin-left: 14px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    background-color: #fffff3;
+    padding: 10px;
+    border-radius: 28px;
+
   }
 
   nav ul li{
     left: 20px;
     bottom: 20px;
+    margin-left: 14px;
     list-style: none;
     display: inline-block;
-    background-color: forestgreen;
-    padding: 10px;
-    border-radius: 10%;
+    color: black;
+
+    
   }
 
   nav ul li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    color: blanchedalmond;
+    background-color:#fffff3;
+    padding: 10px;
+    border-radius: 28px;
   }
 
 
   nav ul li a:hover{
-    text-decoration: underline;
     font-weight: bolder;
-    color: lightgreen;
+    color: black;
+    background-color:#a6e51c;
   }
 
   main{
     margin-top: 120px;
-    background-color: aqua;
+    background-color: #fffff3;
      display: flex;
     flex-direction: column;
     gap: 10px;
@@ -82,20 +122,21 @@ body{
 
   #velkomstcontainer{
     max-width: 60%;
-    border: 3px solid darkgreen;
+   /* border: 3px solid darkgreen;*/
+   background-color: #ecffd4;
     border-radius: 10px;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 10px auto;
     
 }
 
   section h1{
     text-align: center;
     font-weight: bolder;
-    font-size: 65px;
-    color: darkgreen;
+    font-size: 50px;
+    color: black;
     padding: 20px;
   }
 
@@ -107,8 +148,8 @@ body{
   h2{
     text-align: center;
     font-weight: bolder;
-    font-size: 55px;
-    color: darkgreen;
+    font-size: 45px;
+    color: black;
     padding: 20px;
   }
 
@@ -121,24 +162,75 @@ body{
     gap: 15px;
   }
 
-  .temaboks{
-    border: darkgreen 3px solid;
-    border-radius: 10px;
+  .klassetrin_et{
+    border-radius: 28px;
     width: 350px;
     height: 400px;
     padding: 15px;
+    background-color: #ecffd4;
   }
 
-  .temaboks h3{
+   .klassetrin_to{
+    border-radius: 28px;
+    width: 350px;
+    height: 400px;
+    padding: 15px;
+    background-color: #a6e51c;
+  }
+
+   .klassetrin_tre{
+    border-radius: 28px;
+    width: 350px;
+    height: 400px;
+    padding: 15px;
+    background-color: #53e057;
+  }
+
+  h3{
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
+    color: black;
   }
 
   footer{
     width: 100%;
     height: 60px;
     padding-top: 20px;
-    background-color: forestgreen;
+    background-color: #00dbff;
     text-align: center;
     margin-top: 30px;
+  }
+
+/* Desktop */
+
+  @media screen and (min-width: 769px){
+
+    #bars{
+        display: none; /* fjerne det visuelt fra skærmen*/
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end; /* her kan man specificere hvor meuen skal være*/
+    }
+
+  }
+
+  /*-------------------tablet-------------------------*/
+
+@media screen and (max-width: 768px){
+
+    header nav{
+        display: none; /* skjuler nav element i mobil version*/
+    }
+  }
+
+  
+  /*-----------------mobile-------------------------------*/
+   
+  @media screen and (max-width: 480px){
+
+    header nav{
+        display: none; /* skjuler nav element i mobil version*/
+    }
   }
