@@ -17,6 +17,7 @@
 
 body{ 
   background-color: #fffff3;
+  height: 100%vh;
     
 }
 
@@ -120,22 +121,12 @@ body{
     margin-top: 10px;
   }
 
-  #velkomstcontainer{
-    max-width: 60%;
-   /* border: 3px solid darkgreen;*/
-   background-color: #ecffd4;
-    border-radius: 10px;
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px auto;
-    
-}
 
-  section h1{
+
+  h1{
     text-align: center;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: (25px, 16.667px, 50px);
     color: black;
     padding: 20px;
   }
@@ -192,6 +183,32 @@ body{
     color: black;
   }
 
+  .sendknap{
+    width: 40%;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+    font-size: 1.3em;
+    cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #53e057;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+
+  }
+
+
+
+.sendknap:active{
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+  }
+
+
+
   footer{
     width: 100%;
     height: 60px;
@@ -204,6 +221,54 @@ body{
 /* Desktop */
 
   @media screen and (min-width: 769px){
+
+
+    #velkomstcontainer{
+    max-width: 60%;
+   /* border: 3px solid darkgreen;*/
+    background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto; 
+}
+
+#kontaktform{
+   max-width: 60%;
+   /* border: 3px solid darkgreen;*/
+    background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto; 
+}
+
+#kontaktform p{
+  display: block;
+  width: 60%;
+  font-size: 1em;
+  margin: 10px auto;
+}
+
+label{
+  color: black;
+  font-size: 1.4em;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #53e057;
+  border-radius: 5px;
+  margin-top: 0,5em;
+  margin-bottom: 2em;
+  max-width: 100%;
+
+}
+
+
 
     #bars{
         display: none; /* fjerne det visuelt fra skærmen*/
@@ -220,17 +285,103 @@ body{
 
 @media screen and (max-width: 768px){
 
+    #velkomstcontainer{
+    max-width: 90%;
+   /* border: 3px solid darkgreen;*/
+   background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    
+}
+
     header nav{
         display: none; /* skjuler nav element i mobil version*/
     }
-  }
+
+
+#kontaktform{
+   max-width: 90%;
+   /* border: 3px solid darkgreen;*/
+    background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto; 
+}
+
+#kontaktform p{
+  display: block;
+  width: 80%;
+  font-size: 1em;
+  margin: 10px auto;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #53e057;
+  border-radius: 5px;
+  margin-top: 0,5em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+
+
+}
 
   
   /*-----------------mobile-------------------------------*/
    
   @media screen and (max-width: 480px){
 
+      #velkomstcontainer{
+    max-width: 98%;
+   /* border: 3px solid darkgreen;*/
+   background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    
+}
+
     header nav{
         display: none; /* skjuler nav element i mobil version*/
     }
+
+#kontaktform{
+   max-width: 98%;
+   /* border: 3px solid darkgreen;*/
+    background-color: #ecffd4;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto; 
+}
+
+#kontaktform p{
+  display: block;
+  width: 90%;
+  font-size: 1em;
+  margin: 10px auto;
+}
+
+input[type=text], input[type=email], select, textarea{
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #53e057;
+  border-radius: 5px;
+  margin-top: 0,5em;
+  margin-bottom: 2em;
+  max-width: 100%;
+
+}
+
+
   }

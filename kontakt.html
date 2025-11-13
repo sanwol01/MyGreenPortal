@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0cc332e238.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Kontakt</title>
 </head>
 <body>
+
+<header>
+    
+    <div class="headercontainer">
+        <a href="index.html"><img src="img/logo_mgp.png" class="logo" alt="Min Grønne Portal logo og link til startside"></a>
+        <nav>
+            
+            
+            <ul>
+                <li><div class="searchcontainer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-input" type="text" name="søgefelt" placeholder="Find..">
+            </div></li>
+                <li><a href="#">om os</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <main>
+        
+            <div id="kontaktform">
+            
+                <H1>Kontakt os</H1>
+                 <p>
+                  Hvis du vil i kontakt, er du velkommen til at henvende dig til os via vores kontaktformular, så vil vi vende tilbage hurtigst muligt.
+                 </p>
+
+                 
+
+                 <form>
+
+                    <label for="navn">Navn</label>
+                    <input type="text" autocomplete="name" id="navn">
+
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" autocomplete="email" required>
+
+                    
+
+                    <label for="reason">Vælg årsag</label>
+                        <select name="" id="reason">
+                            <option value="0" selected="true" disabled >Vælg...</option>
+                            <option value="1">Ris og Ros</option>
+                            <option value="2">Forslag til projekter</option>
+                            <option value="3">Samarbejde</option>
+                            <option value="4">Andet</option>
+                        </select>
+
+                    <label title="Skriv din besked her" for="besked">Besked</label>
+                    <textarea id="besked"  rows="10" required>
+                    </textarea>
+
+                    <input class="sendknap" type="submit" name="submit" value="Send">
+
+                 </form>
+
+        </div>
+    </main>
+   
+</section>
+
+<footer> <p>Copyright Min Grønne Portal</p></footer>
     
 </body>
 </html>
