@@ -5,46 +5,30 @@
 }
 
 
-/*
-.quicksand-<uniquifier> {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-  */
-
 
 body{ 
-  background-color: #fffff3;
   height: 100%vh;
-    
 }
 
-
+/*---------------header og navigation------------*/
 
   header{ width: 100%;
-          height: 120px;
+          height: 150px;
           position: fixed;
           top: 0;
+          padding: 5px;
           background-color: #00dbff;
           display: flex;
-          flex-wrap: nowrap;
-          z-index: 1;
-    
+          z-index: 1; 
   }
 
-
-
-  .logo{
-    display: flexbox;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100px;
-    width: auto;
-    margin: 10px 10px;
+  .headercontainer{
+    position: relative;
+    width: 100vw;
   }
 
+  
+/*
   nav{ 
     position: absolute;
     right:15px;
@@ -53,55 +37,9 @@ body{
   
   }
 /*
-  .searchcontainer{
-    width: max-content;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 28px;
-    background-color: #fffff3;
 
-  }*/
-
-  .search-input{
-    margin-left: 14px;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
-    outline: none;
-    border: none;
-    background-color: #fffff3;
-    padding: 10px;
-    border-radius: 28px;
-
-  }
-
-  nav ul li{
-    left: 20px;
-    bottom: 20px;
-    margin-left: 14px;
-    list-style: none;
-    display: inline-block;
-    color: black;
-
-    
-  }
-
-  nav ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    background-color:#fffff3;
-    padding: 10px;
-    border-radius: 28px;
-  }
-
-
-  nav ul li a:hover{
-    font-weight: bolder;
-    color: black;
-    background-color:#a6e51c;
-  }
-
+ 
+/*---------------------- main content------------------*/
   main{
     margin-top: 120px;
     background-color: #fffff3;
@@ -112,24 +50,37 @@ body{
     align-content: center;
   }
 
-  main p{
-    line-height: 1.6;
-    font-size: 16px;
-  }
-
-  section{
-    margin-top: 10px;
-  }
-
-
-
-  h1{
+  
+h1{
     text-align: center;
     font-weight: bolder;
     font-size: (25px, 16.667px, 50px);
     color: black;
     padding: 20px;
   }
+
+  main p{
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+/*------------------------------ secondary content---------------*/
+
+#klassecontainer{
+
+  width: 95%;
+  border: #00dbff solid 5px;
+  border-radius: 5px;
+  margin: 10px auto 20px auto;
+  padding: 10px 10px 25px 10px; 
+
+}
+
+  section{
+    margin-top: 10px;
+    background-color: white;
+  }
+
 
   audio{
    align-self: center;
@@ -140,7 +91,7 @@ body{
     text-align: center;
     font-weight: bolder;
     font-size: 45px;
-    color: black;
+    color: #00dbff;
     padding: 20px;
   }
 
@@ -150,11 +101,11 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 15px;
+    gap: 20px;
   }
 
   .klassetrin_et{
-    border-radius: 28px;
+    border-radius: 5px;
     width: 350px;
     height: 400px;
     padding: 15px;
@@ -162,7 +113,7 @@ body{
   }
 
    .klassetrin_to{
-    border-radius: 28px;
+    border-radius: 5px;
     width: 350px;
     height: 400px;
     padding: 15px;
@@ -170,12 +121,20 @@ body{
   }
 
    .klassetrin_tre{
-    border-radius: 28px;
+    border-radius: 5px;
     width: 350px;
     height: 400px;
     padding: 15px;
     background-color: #53e057;
   }
+
+ .klassetrin{
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  align-content: flex-end;
+ }
 
   h3{
     text-align: center;
@@ -183,36 +142,45 @@ body{
     color: black;
   }
 
+  .klassetrinknap{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  }
+
+ 
+
+
   .sendknap{
     width: 40%;
     height: 35px;
     display: block;
     margin: 10px auto;
     font-size: 1.3em;
+    font-weight: bold;
     cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: #000;
+  color: white;
   background-color: #53e057;
   border: none;
   border-radius: 10px;
   box-shadow: 0 5px #999;
-
   }
-
-
 
 .sendknap:active{
   box-shadow: 0 1px #666;
   transform: translateY(4px);
   }
 
-
+  /*---------------------------- footer-----------------------*/
 
   footer{
     width: 100%;
-    height: 60px;
-    padding-top: 20px;
+    height: 80px;
+    padding-top: 30px;
+    color: #fffff3;
     background-color: #00dbff;
     text-align: center;
     margin-top: 30px;
@@ -221,6 +189,48 @@ body{
 /* Desktop */
 
   @media screen and (min-width: 769px){
+
+   .logo{
+    display: flex;
+    margin: 20px auto 20px 20px;
+    height: 100px;
+  }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end; /* her kan man specificere hvor meuen skal være*/
+        align-content: center;
+        background-color: #53e057;
+    }
+
+     nav ul li{
+    left: 20px;
+    bottom: 20px;
+    margin-left: 14px;
+    list-style: none;
+    display: inline-block;
+    color: #fffff3;
+    margin-bottom: 10px;
+
+    
+  }
+
+  nav ul li a{
+    color: #ecffd4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    
+  }
+
+
+  nav ul li a:hover{
+    font-weight: bolder;
+    color: #fffff3;
+    border: 2px #fffff3 solid;
+    border-radius: 5px;
+  }
 
 
     #velkomstcontainer{
@@ -269,21 +279,53 @@ input[type=text], input[type=email], select, textarea{
 }
 
 
-
-    #bars{
-        display: none; /* fjerne det visuelt fra skærmen*/
-    }
-
-    nav ul{
-        display: flex;
-        justify-content: flex-end; /* her kan man specificere hvor meuen skal være*/
-    }
-
   }
 
   /*-------------------tablet-------------------------*/
 
 @media screen and (max-width: 768px){
+
+   .logo{ 
+    margin: 10px auto 15px auto;
+    height: 80px;
+  }
+
+    nav ul{
+        display: flex;
+        justify-content: center; /* her kan man specificere hvor meuen skal være*/
+        align-content: center;
+        background-color: #53e057;
+    }
+
+   nav ul li{
+    left: 20px;
+    bottom: 20px;
+    margin-left: 14px;
+    list-style: none;
+    display: inline-block;
+    color: #fffff3;
+    margin-bottom: 10px;
+
+    
+  }
+
+  nav ul li a{
+    color: #ecffd4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    
+  }
+
+
+  nav ul li a:hover{
+    font-weight: bolder;
+    color: #fffff3;
+    border: 2px #fffff3 solid;
+    border-radius: 5px;
+  }
+
 
     #velkomstcontainer{
     max-width: 90%;
@@ -296,11 +338,6 @@ input[type=text], input[type=email], select, textarea{
     margin: 10px auto;
     
 }
-
-    header nav{
-        display: none; /* skjuler nav element i mobil version*/
-    }
-
 
 #kontaktform{
    max-width: 90%;
@@ -338,6 +375,46 @@ input[type=text], input[type=email], select, textarea{
    
   @media screen and (max-width: 480px){
 
+
+    .logo{ 
+    margin: 10px auto 15px auto;
+    height: 80px;
+  }
+
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; 
+        align-content: center;
+        background-color: #53e057;
+    }
+
+  nav ul li{
+    /*margin-left: 10px;*/
+    list-style: none;
+    display: inline-block;
+    color: #fffff3;
+    margin-bottom: 8px;
+
+    
+  }
+
+  nav ul li a{
+    color: #ecffd4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+  
+  }
+
+  nav ul li a:hover{
+    font-weight: bolder;
+    color: #fffff3;
+    border: 2px #fffff3 solid;
+    border-radius: 5px;
+  }
+
       #velkomstcontainer{
     max-width: 98%;
    /* border: 3px solid darkgreen;*/
@@ -349,10 +426,7 @@ input[type=text], input[type=email], select, textarea{
     margin: 10px auto;
     
 }
-
-    header nav{
-        display: none; /* skjuler nav element i mobil version*/
-    }
+ 
 
 #kontaktform{
    max-width: 98%;
