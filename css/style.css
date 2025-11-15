@@ -119,6 +119,16 @@ h1{
 
 }
 
+.temacontainer{
+  margin-top: 150px;
+  width: 95%;
+  border: #a6e51c solid 5px;
+  border-radius: 5px;
+  margin: 10px auto 20px auto;
+  padding: 10px 10px 25px 10px; 
+
+}
+
   section{
     margin-top: 10px;
     background-color: white;
@@ -130,10 +140,16 @@ h1{
    margin: 20px auto;
   }
 
+  .emneoverskrift{
+    font-size: 45px;
+    color: #a6e51c;
+    text-align: center;
+  }
+
   h2{
     text-align: center;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 30px;
     color: #00dbff;
     padding: 20px;
   }
@@ -147,7 +163,7 @@ h1{
     gap: 20px;
   }
 
-  .klassetrin_et{
+  .containeret{
     border-radius: 5px;
     width: 350px;
     height: 400px;
@@ -155,7 +171,7 @@ h1{
     background-color: #ecffd4;
   }
 
-   .klassetrin_to{
+   .containerto{
     border-radius: 5px;
     width: 350px;
     height: 400px;
@@ -163,12 +179,20 @@ h1{
     background-color: #a6e51c;
   }
 
-   .klassetrin_tre{
+   .containertre{
     border-radius: 5px;
     width: 350px;
     height: 400px;
     padding: 15px;
     background-color: #53e057;
+  }
+
+  .temaimg{
+    width: 80%;
+    height: auto;
+    margin: 10 auto;
+    
+
   }
 
  .klassetrin{
@@ -185,7 +209,7 @@ h1{
     color: black;
   }
 
-  .klassetrinknap{
+  .storknap{
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -290,7 +314,7 @@ h1{
 }
 
 #kontaktform{
-   max-width: 60%;
+   max-width: 95%;
    /* border: 3px solid darkgreen;*/
     background-color: #ecffd4;
     border-radius: 10px;
@@ -396,7 +420,7 @@ input[type=text], input[type=email], select, textarea{
 }
 
 #kontaktform{
-   max-width: 90%;
+   max-width: 95%;
    /* border: 3px solid darkgreen;*/
     background-color: #ecffd4;
     border-radius: 10px;
