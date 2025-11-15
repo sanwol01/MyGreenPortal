@@ -36,7 +36,7 @@ body{
     min-height: 20px;
     padding: 5px 20px 5px 20px;
     height: auto;
-    background-color: #ecffd4;
+    background-color: #7cedff;
     border-bottom: 3px solid #fffff3;
   }
 .breadcrumbs a{
@@ -80,7 +80,7 @@ body{
  
 /*---------------------- main content------------------*/
   main{
-    margin-top: 145px;
+    margin-top: 185px;
     background-color: #fffff3;
      display: flex;
     flex-direction: column;
@@ -89,9 +89,9 @@ body{
     align-content: center;
   }
 
-  .maincontent{
+  /*.maincontent{
     margin-top: 150px;
-  }
+  }*/
 
   
 h1{
@@ -149,8 +149,8 @@ h1{
   h2{
     text-align: center;
     font-weight: bolder;
-    font-size: 30px;
-    color: #00dbff;
+    font-size: 20px;
+    color: #000000;
     padding: 20px;
   }
 
