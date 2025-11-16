@@ -30,14 +30,13 @@ body{
   .breadcrumbs{
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: baseline;
     order: 1;
     width: 100vw;
     min-height: 20px;
     padding: 5px 20px 5px 20px;
     height: auto;
     background-color: #7cedff;
-    border-bottom: 3px solid #fffff3;
   }
 .breadcrumbs a{
   text-decoration: none;
@@ -102,11 +101,18 @@ h1{
     padding: 20px;
   }
 
+  .lektion h3{
+    text-align: left;
+    color: black;
+    margin-top: 20px;
+  }
+
   main p{
     line-height: 1.6;
     font-size: 16px;
   }
 
+  
 /*------------------------------ secondary content---------------*/
 
 #klassecontainer{
@@ -141,9 +147,11 @@ h1{
   }
 
   .emneoverskrift{
+    display: block;
     font-size: 45px;
     color: #a6e51c;
     text-align: center;
+    margin-top: 20px;
   }
 
   h2{
@@ -260,7 +268,7 @@ h1{
    .logo{
     display: flex;
     margin: 10px auto 10px 30px;
-    height: 100px;
+    height: 80px;
   }
 
     nav ul{
@@ -312,6 +320,16 @@ h1{
     flex-direction: column;
     margin: 10px auto; 
 }
+
+.lektion{
+    width: 60%;
+    height: auto;
+    margin: 20px auto 4px auto;
+    border: 3px #a6e51c solid;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 18px;
+  }
 
 #kontaktform{
    max-width: 95%;
@@ -416,8 +434,19 @@ input[type=text], input[type=email], select, textarea{
     display: flex;
     flex-direction: column;
     margin: 10px auto;
-    
 }
+
+.lektion{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 20px auto 4px auto;
+    border: 3px #a6e51c solid;
+    border-radius: 10px;
+    padding: 20p 40px;
+    font-size: 16px;
+  }
 
 #kontaktform{
    max-width: 95%;
@@ -518,6 +547,19 @@ input[type=text], input[type=email], select, textarea{
     margin: 10px auto;
     
 }
+
+.lektion{
+  
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    height: auto;
+    margin: 20px auto 4px auto;
+    border: 3px #a6e51c solid;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+  }
  
 
 #kontaktform{
