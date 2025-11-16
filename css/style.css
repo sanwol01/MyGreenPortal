@@ -151,7 +151,7 @@ h1{
     font-size: 45px;
     color: #a6e51c;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
   }
 
   h2{
@@ -199,8 +199,37 @@ h1{
     width: 80%;
     height: auto;
     margin: 10 auto;
-    
+  }
 
+  .spring{
+    width:400px;
+    flex-grow: 1;
+    background-color: #a6e51c;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .summer{
+    width:400px;
+    flex-grow: 1;
+    background-color: #f9da23;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .fall{
+    width:400px;
+    flex-grow: 1;
+    background-color: #f7931e;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .winter{
+    width:400px;
+    flex-grow: 1;
+    background-color: #00dbff;
+    border-radius: 10px;
+    padding: 10px;
   }
 
  .klassetrin{
