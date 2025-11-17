@@ -65,33 +65,8 @@ body{
   font-weight: bolder;
 }
 
-  
-/*
-  nav{ 
-    position: absolute;
-    right:15px;
-    bottom: 5px;
-    padding: 10px;
-  
-  }
-/*
-
  
-/*---------------------- main content------------------*/
-  main{
-    margin-top: 185px;
-    background-color: #fffff3;
-     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-content: center;
-  }
-
-  /*.maincontent{
-    margin-top: 150px;
-  }*/
-
+/*------------------------------------ main content------------------------------*/
   
 h1{
     text-align: center;
@@ -113,10 +88,9 @@ h1{
   }
 
   
-/*------------------------------ secondary content---------------*/
+/*------------------------------ secondary content----------------------------*/
 
 #klassecontainer{
-
   width: 95%;
   border: #00dbff solid 5px;
   border-radius: 5px;
@@ -148,10 +122,14 @@ h1{
 
   .emneoverskrift{
     display: block;
-    font-size: 45px;
+    margin: 0 auto;
+    font-size: 42px;
     color: #a6e51c;
     text-align: center;
-    margin-top: 5px;
+  }
+
+  .lektion p {
+    display:inline-block;
   }
 
   h2{
@@ -162,6 +140,7 @@ h1{
     padding: 20px;
   }
 
+
   .container{
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +148,35 @@ h1{
     align-items: center;
     align-content: center;
     gap: 20px;
+  }
+
+  aside{
+    display: flexbox;
+    align-content: flex-end;
+    border: black 3px dotted;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .laeshojt{
+    width: 455px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 10px 0px 10px 10px;
+    background-color: #f2f4f5;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .laeshojt p{
+    padding-left: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .containeret{
@@ -290,7 +298,7 @@ h1{
     margin-top: 30px;
   }
 
-/* Desktop */
+/*------------------------------------- Desktop------------------------------------------ */
 
   @media screen and (min-width: 769px){
 
@@ -302,7 +310,7 @@ h1{
 
     nav ul{
         display: flex;
-        justify-content: flex-end; /* her kan man specificere hvor meuen skal være*/
+        justify-content: flex-end; 
         align-content: center;
         background-color: #00dbff;
         padding-right: 30px;
@@ -339,9 +347,19 @@ h1{
   }
 
 
-    #velkomstcontainer{
+
+main{
+    margin-top: 185px;
+    background-color: #fffff3;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+#velkomstcontainer{
     max-width: 60%;
-   /* border: 3px solid darkgreen;*/
     background-color: #ecffd4;
     border-radius: 10px;
     padding: 20px 30px;
@@ -351,13 +369,24 @@ h1{
 }
 
 .lektion{
-    width: 60%;
+    width: 80%;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    gap: 10px;
     margin: 20px auto 4px auto;
     border: 3px #a6e51c solid;
     border-radius: 10px;
     padding: 20px 40px;
     font-size: 18px;
+  }
+
+  .lektion ul{
+    display: block;
   }
 
 #kontaktform{
@@ -453,6 +482,16 @@ input[type=text], input[type=email], select, textarea{
     border-radius: 5px;
   }
 
+  main{
+    margin-top: 185px;
+    background-color: #fffff3;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
 
     #velkomstcontainer{
     max-width: 90%;
@@ -467,13 +506,17 @@ input[type=text], input[type=email], select, textarea{
 
 .lektion{
     width: 90%;
-    display: flex;
-    flex-wrap: wrap;
     height: auto;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
     margin: 20px auto 4px auto;
     border: 3px #a6e51c solid;
     border-radius: 10px;
-    padding: 20p 40px;
+    padding: 20px 40px;
     font-size: 16px;
   }
 
@@ -565,10 +608,19 @@ input[type=text], input[type=email], select, textarea{
     border-radius: 5px;
   }
 
-      #velkomstcontainer{
+  main{
+    margin-top: 130px;
+    background-color: #fffff3;
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #velkomstcontainer{
     max-width: 98%;
-   /* border: 3px solid darkgreen;*/
-   background-color: #ecffd4;
+    background-color: #ecffd4;
     border-radius: 10px;
     padding: 20px 30px;
     display: flex;
@@ -578,11 +630,14 @@ input[type=text], input[type=email], select, textarea{
 }
 
 .lektion{
-  
-    display: flex;
-    flex-wrap: wrap;
     width: 98%;
     height: auto;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
     margin: 20px auto 4px auto;
     border: 3px #a6e51c solid;
     border-radius: 10px;
@@ -593,7 +648,6 @@ input[type=text], input[type=email], select, textarea{
 
 #kontaktform{
    max-width: 98%;
-   /* border: 3px solid darkgreen;*/
     background-color: #ecffd4;
     border-radius: 10px;
     padding: 20px 50px;
