@@ -385,8 +385,19 @@ main{
     font-size: 18px;
   }
 
+  .tematekst{
+    width: 50vh;
+    align-self: flex-start;
+    background-color: #ecffd4;
+  }
+
   .lektion ul{
     display: block;
+  }
+
+  .lektion p{
+    display: block;
+    margin-bottom: 15px;
   }
 
 #kontaktform{
